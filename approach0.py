@@ -1,7 +1,7 @@
 import mysql.connector
 
 
-cnx = mysql.connector.connect(host= 'localhost', password='root',user='root')
+cnx = mysql.connector.connect(host= 'sql6.freesqldatabase.com', password='HeFcelIrJY',user='sql6589129')
 cursor = cnx.cursor()
 
 cursor.execute("use systemdesign")

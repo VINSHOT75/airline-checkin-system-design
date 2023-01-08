@@ -1,11 +1,14 @@
 import mysql.connector
 import random
 
-cnx = mysql.connector.connect(host= 'localhost', password='root',user='root')
+cnx = mysql.connector.connect(host= 'sql6.freesqldatabase.com', password='HeFcelIrJY',user='sql6589129')
 cursor = cnx.cursor()
 
-cursor.execute("use systemdesign")
-# cursor.execute("show tables")
+cursor.execute("use sql6589129")
+cursor.execute("show tables")
+
+for i in cursor:
+    print(i)
 
 print("welcome to Raoji bazar airlines")
 print()
